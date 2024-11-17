@@ -67,7 +67,8 @@ const traverseDirectory = (dirPath) => {
             path.extname(file) === '.html' ||
             path.extname(file) === '.http' ||
             path.extname(file) === '.cs' ||      // Included for C# files
-            path.extname(file) === '.dart'       // Included for Dart files
+            path.extname(file) === '.dart' ||       // Included for Dart files
+            path.extname(file) === '.py' 
           )
         ) {
           // If it's a relevant file (including .cs for .NET), read its contents
